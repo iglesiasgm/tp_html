@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+        }
+        footer{
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+            background-color: blanchedalmond;
+        }
+        main{
+            padding: 20px;
+        }
+        section, article{
+            border: 1px solid grey;
+            padding: 20px;
+            background-color: lightcoral;
+        }
+        header{
+            padding: 10px;
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Encabezado Principal</h1>
+        <p>Este es el comiendo de la página</p>
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#1">Ir a la seccion 1</a></li>
+            <li><a href="#2">Ir a la seccion 2</a></li>
+            <li><a href="#3">Ir a la seccion 3</a></li>
+            <li><a href="#4">Ir al articulo 4</a></li>
+            <li><a href="#5">Ir a la seccion 5</a></li>
+            <li><a href="#6">Ir al articulo 6</a></li>
+            <li><a href="#7">Ir al articulo 7</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="1">
+            <div>
+                <h1> 1. Estructura básica del documento HTML </h1>
+                <p> Este documento HTML contiene una 
+                    estructura básica que incluye la declaración 
+                    de DOCTYPE, etiquetas de metadatos y un título.</p>
+            </div>
+        </section>
+        <section id="2">
+            <div>
+                <h1> 2. Encabezados y Propiedades del texto </h1>
+                <p><b>Este es un texto en negrita. </b></p>
+                <p><em> Este es un texto en cursiva. </em></p>
+                <p><u> Este es un texto subrayado. </u></p>
+            </div>
+        </section>
+        <section id="3">
+            <div>
+                <h1> 3. Divisiones y agrupación de contenido</h1>
+                <h2> Sección 1 </h2>
+                <p> Contenido de la primera sección agrupada en un <em>div</em></p>    
+            </div>
+            <div>
+                <h2> Sección 2 </h2>
+                <p> Contenido de la segunda sección agrupada en un <em>div</em></p>
+            </div>
+        </section>
+        <article id="4">
+            <div>
+                <h1> 4. Enlaces y Listas</h1>
+                <p> Visita nuestro <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="-blank">sitio web</a> 
+                    para más información. </p>
+                <p> Enlaces internos: </p>
+                    <ul>
+                        <li><a href="#1">Ir al encabezado 1</a></li>
+                        <li><a href="#7">Ir al formulario</a></li>
+                        <li><a href="#5">Ir a la tabla</a></li>
+                    </ul>
+                <p> Lista desordenada: </p>
+                    <ul>
+                        <li>Primer ítem de una lista desordenada</li>
+                        <li>Segundo ítem de una lista desordenada</li>
+                        <li>Tercer ítem de una lista desordenada</li>
+                        <li>Cuarto ítem de una lista desordenada</li>
+                    </ul>
+                <p> Lista ordenada: </p>
+                    <ol>
+                        <li>Primer ítem de una lista ordenada</li>
+                        <li>Segundo ítem de una lista ordenada</li>
+                        <li>Tercer ítem de una lista ordenada</li>
+                        <li>Cuarto ítem de una lista ordenada</li>
+                    </ol>
+            </div>
+        </article>
+        <section id="5">
+            <div>
+                <h1> 5. Elementos multimedia </h1>
+                <img src="https://i.blogs.es/f59c54/he-man-nostalgia-espinof/1366_2000.jpg" alt="He_man" 
+                width="400px" height="200px"/>
+                <video src="videos/mecha.mp4" controls width="400px" height="200px"/>
+            </div>
+            <div> <!--BUSCAR OTRA FORMA DE PONER AUDIO Y QUE SE VEA-->
+                <audio src="videos/Hexenmeister_Tänzelsession.mp3" controls/>
+            </div>
+        </section>
+        <article id="6">
+            <div>
+                <h1> 6. Tablas </h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Columna 1 </th>
+                            <th> Columna 2 </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Dato 1 </td>
+                            <td> Dato 2 </td>
+                        </tr>
+                        <tr>
+                            <td> Dato 3 </td>
+                            <td> Dato 4 </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+        <article id="7">
+            <div>
+                <h1> 7. Formularios </h1>
+                <form>
+                    <label> Nombre: </label>
+                    <input type="text" placeholder="Ingrese su nombre" />            
+                    <label> Email: </label>
+                    <input type="email" placeholder="Ingrese su email" />
+                    <label> Mensaje: </label>
+                    <textarea></textarea>
+                    <button type="submit"> Enviar Formulario</button>
+                </form>
+            </div>
+        </article>
+    </main>
+    <footer> 
+    <p> Este es el fin de la página </p>
+    </footer>
+</body>
+</html>
